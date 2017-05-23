@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Hang a man</title>
+  <style>
+    body{
+      font-family: sans-serif;
+      color:grey;
+      background-color: #f3f3f3;
+    }
+    h1{
+      color:#ff5050;
+    }
+    form{
+      background: white;
+      border-radius: 5px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>Hang a man </h1>
+    <h4>Welcome to the python game</h4>
+    <p aligen="left">Hint: {{hint}}</p>
+    <h2>{{completed_array}}</h2>
+    <form action="http://127.0.0.1:5000/submit" method="post">
+      Enter the letter:<br>
+      <input type="text" name="letter" autofocus autocomplete="off">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <img src="static/images/{{life}}.png" alt="black man" style="width:256px;height:256px;"><br>
+    <a href="http://127.0.0.1:5000/">New Game</a>
+    <p>Made by Anju, Anitha, Aparna </p>
+  </center>
+</body>
+</html>
